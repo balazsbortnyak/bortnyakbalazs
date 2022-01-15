@@ -341,7 +341,7 @@ section .title::after{
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
-.skills .skills-content .right .info{
+.skills .skills-content .right .{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
@@ -369,17 +369,15 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .js::before{
+    width: 90%;
+}
+.skills-content .right .php::before{
     width: 70%;
 }
+
 
 /* teams section styling */
 .teams .title::after{
