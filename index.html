@@ -1,0 +1,97 @@
+<head>
+    <title>Bortnyák Balázs Weboldala</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#A8895C">
+    <meta name="description" content="Bortnyák Balázs. Webfejlesztés és grafikák.">
+    <meta name="google" content="notranslate">
+    <meta name="subject" content="Bortnyák Balázs. Webfejlesztés és grafikák.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logoBB.png">
+</head>
+<body>
+    <div class="mobile-view">
+        <h1 class="thanks">BALÁZS</h1>
+    <p class="thx">Kérlek, nézegesd weboldalam számítógépen.</p>
+     <a href="https://www.behance.net/bbalazs"><button data-text="Awesome" class="button" href="https://www.behance.net/bbalazs">
+        <span href="https://www.behance.net/bbalazs" class="actual-text">&nbsp;PORTFOLIÓ&nbsp;</span>
+        <span href="https://www.behance.net/bbalazs"class="hover-text" aria-hidden="true">&nbsp;PORTFOLIÓ&nbsp;</span>
+    </button></a>
+    </div>
+    <div class="cursor"></div>
+    <div class="menu-bar">
+        <a class="home" href="index.html">Bortnyák Balázs<span class="sec-text">__</span></a>
+        <ul>
+        <li><a href="#rolam">//rólam</a></li>
+        <li><a href="#munkaim">//munkáim</a></li>
+        <li><a href="#divform">//kapcsolat</a></li>
+        </ul>
+    </div>
+    <div class="first-section">
+        <h1>BALÁZS.</h1>
+        <h2>WEBFEJLESZTÉS & DESIGN</h2>
+        <div class="first-images">
+            <img class="i1 kep" data-value="-2" src="assets/labda.png">
+            <img class="i2 kep" data-value="6" src="assets/gyemant.png">
+            <img class="i3 kep" data-value="4" src="assets/haromszeg.png">
+        </div>
+    </div>
+    <div id="rolam" class="rolam-section">
+        <h1>rólam.</h1>
+        <p class="rolam-para">Szia! Balázs vagyok! Már 3 éve foglalkozom grafikák készítésével, fejlesztéssel. Weboldal fejlesztést, arculat designt, logót, bannerereket készítek, de ezek mellett megkereshetsz bármilyen más design kéréssel. </p>
+    </div>
+    <div id="munkaim" class="munkaim-section">
+        <h1>munkáim.</h1>
+            <div class="contains">
+                
+            <img style="overflow:visible;" src="assets/behance.png">
+            <h1>Behance Portfolio</h1>
+            </div>
+            <p>Ide kattintva megtekintheted a portfoliómat a <span style="color: #1b6bd5; font-weight: 600;"> BEHANCE </span>oldalán </p>
+          <a class="ah" href="https://www.behance.net/bbalazs"><button class="cta">
+            <span class="hover-underline-animation"> Vigyél oda </span>
+            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+            </svg>
+        </button></a>
+    
+    </div>
+    <div id="divform" class="form-div">
+        <h1>kapcsolat.</h1>
+        <form action="https://formsubmit.co/bortnyakbalazs@gmail.com" method="post">
+            <input type="text" name="neve" id="name" placeholder="Teljes név" required>
+            <input type="email" name="email" id="email" placeholder="E-mail cím" required>
+            <textarea id="message" name="leiras" rows="4" placeholder="Leírás, miben segíthetek?"></textarea>
+            
+            <div class="buttons">
+            <button type="submit">Küldés</button>
+
+        </div>
+        <input type="hidden" name="_next" value="https://balazs.bortnyak.hu/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+       
+        </form>
+    </div>
+    <div class="footer">
+        <p>Balázs :)</p>
+    </div>
+</body>
+
+<script>
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = "__";
+        }, 0);
+        setTimeout(() => {
+            text.textContent = "...";
+        }, 4000);
+        setTimeout(() => {
+            text.textContent = "_.";
+        }, 8000); //1s = 1000 milliseconds
+    }
+
+    textLoad();
+    setInterval(textLoad, 12000);
+</script>  
